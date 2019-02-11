@@ -12,8 +12,8 @@
       "memory": 256,
       "image": "<IMAGE1_NAME>",
       "essential": true,
-      "name": "aspdotnet-cd"
+      "name": "iis-cicd"
     }
   ],
-  "family": "aspdotnet-cd",
+  "family": "iis-cicd",
 }
