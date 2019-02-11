@@ -10,18 +10,10 @@
       ],
       "cpu": 0,
       "memory": 256,
-      "image": "869630519277.dkr.ecr.us-east-1.amazonaws.com/cloudthat-ecr:latest",
+      "image": "<IMAGE1_NAME>",
       "essential": true,
       "name": "aspdotnet-cd"
     }
   ],
-  "compatibilities": [
-    "EC2"
-  ],
   "family": "aspdotnet-cd",
-  "requiresCompatibilities": [
-    "EC2"
-  ],
-  "revision": 1,
-  "status": "ACTIVE"
 }
