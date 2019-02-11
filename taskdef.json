@@ -1,29 +1,27 @@
 {
-    "containerDefinitions": [
+  "containerDefinitions": [
+    {
+      "portMappings": [
         {
-            "entryPoint": [
-                "powershell",
-                "-Command"
-            ],
-            "portMappings": [
-                {
-                    "hostPort": 0,
-                    "protocol": "tcp",
-                    "containerPort": 80
-                }
-            ],
-            "command": [
-                "New-Item -Path C:\\inetpub\\wwwroot\\index.html -Type file -Value '<html> <head> <title>Amazon ECS Sample App</title> <style>body {margin-top: 40px; background-color: #333;} </style> </head><body> <div style=color:white;text-align:center> <h1>Amazon ECS Sample App</h1> <h2>Congratulations!</h2> <p>Your application is now running on a container in Amazon ECS.</p>'; C:\\ServiceMonitor.exe w3svc"
-            ],
-            "cpu": 512,
-            "environment": [],
-            "mountPoints": [],
-            "memory": 1024,
-            "volumesFrom": [],
-            "image": "<IMAGE1_NAME>",
-            "essential": true,
-            "name": "iis-cicd"
+          "hostPort": 0,
+          "protocol": "tcp",
+          "containerPort": 80
         }
-    ],
-    "family": "iis-cicd"
+      ],
+      "cpu": 0,
+      "memory": 256,
+      "image": "869630519277.dkr.ecr.us-east-1.amazonaws.com/cloudthat-ecr:latest",
+      "essential": true,
+      "name": "aspdotnet-cd"
+    }
+  ],
+  "compatibilities": [
+    "EC2"
+  ],
+  "family": "aspdotnet-cd",
+  "requiresCompatibilities": [
+    "EC2"
+  ],
+  "revision": 1,
+  "status": "ACTIVE"
 }
