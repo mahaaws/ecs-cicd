@@ -22,7 +22,7 @@
             "volumesFrom": [],
             "image": "<IMAGE1_NAME>",
             "essential": true,
-            "name": "iis-cicd"
+            "name": "iis-server"
         }
     ],
     "family": "ecs-cicd"
