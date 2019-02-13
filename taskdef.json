@@ -3,7 +3,10 @@
         {
             "entryPoint": [
                 "powershell",
-                "-Command"
+                "-command"
+            ],
+            command": [
+                "ping -t localhost"
             ],
             "portMappings": [
                 {
