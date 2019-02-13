@@ -25,5 +25,5 @@
             "name": "iis-cicd"
         }
     ],
-    "family": "iis-cicd"
+    "family": "ecs-cicd"
 }
